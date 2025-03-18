@@ -11,5 +11,5 @@ def register_error_handlers(app):
 
     @app.errorhandler(Exception)
     def handle_unexpected_error(e):
-        app.logger.error(f"Unexpected error: {e}")
+        app.logger.error(f'Unexpected error: {e}')
         return jsonify(JsonResult.ERROR.to(message=str(e))), 500
