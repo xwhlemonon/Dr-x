@@ -1,0 +1,51 @@
+$menu-height: 50px;
+
+.header {
+  .ant-layout-header {
+    background-color: rgb(255, 255, 255) !important;
+    height: 64px !important;
+    line-height: 64px !important;
+  }
+}
+
+.menu {
+  height: $menu-height;
+  margin-left: 30px;
+
+  .ant-radio-button-wrapper-checked {
+    //color: rgb(0, 0, 0) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+
+    &:not(.ant-radio-button-wrapper-disabled)::before {
+      background-color: rgba(0, 0, 0, 0) !important;
+    }
+  }
+
+  .ant-radio-button-wrapper {
+    //color: rgb(0, 0, 0) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+
+    &:not(.ant-radio-button-wrapper-disabled)::before {
+      background-color: rgba(0, 0, 0, 0) !important;
+    }
+  }
+}
+
+.children {
+  width: 100vw;
+  height: calc(100vh - $menu-height);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+}

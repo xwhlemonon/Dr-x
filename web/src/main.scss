@@ -1,0 +1,29 @@
+:root {
+  font-family: "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  "Microsoft YaHei",
+  "Source Han Sans SC",
+  "Noto Sans CJK SC",
+  sans-serif;
+}
+
+body {
+  background: #FBFAF9;
+  overflow: hidden;
+
+  a {
+    color: #2c3e50;
+    text-decoration: inherit;
+
+    &:hover {
+      color: #3498db;
+    }
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
